@@ -10,7 +10,7 @@ resource "aws_instance" "name" {
 }
 
 resource "aws_s3_bucket" "name" {
-    bucket = "shankaryalagandula-89"
+    bucket = "shankaryalagandula-95"
     
   
 }
