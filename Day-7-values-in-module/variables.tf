@@ -10,9 +10,6 @@ variable "type" {
     type = string
   
 }
-
-
-}
 variable "vpc_name" {
   type = string
 }
