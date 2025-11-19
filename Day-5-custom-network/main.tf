@@ -100,8 +100,8 @@ resource "aws_security_group" "sg" {
 }
 
 resource "aws_instance" "bastionec2" { 
-    instance_type = "t2.micro"
-     ami = "ami-0bdd88bd06d16ba03"
+    instance_type = "t3.micro"
+     ami = "ami-0fa3fe0fa7920f68e"
      subnet_id = aws_subnet.publicname.id
      vpc_security_group_ids = [aws_security_group.sg.id]
 
@@ -113,8 +113,8 @@ resource "aws_instance" "bastionec2" {
 }
 
 resource "aws_instance" "ec2" { 
-    instance_type = "t2.micro"
-     ami = "ami-0bdd88bd06d16ba03"
+    instance_type = "t3.micro"
+     ami = "ami-0fa3fe0fa7920f68e"
      subnet_id = aws_subnet.privatename.id
      vpc_security_group_ids = [aws_security_group.sg.id]
      tags = {
